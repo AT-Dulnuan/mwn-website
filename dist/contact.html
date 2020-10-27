@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MWNetworks</title>
+
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body id="contact">
+    <div id="top-bar"></div>
+
+    <nav class="navbar" role="navigation" aria-label="main navigation" data-aos="fade">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="./">
+                    <img src="./assets/logo-icon.png">
+                </a>
+
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                    data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div class="navbar-menu">
+                <div class="navbar-end">
+                    <a href="./" class="navbar-item nav-link">Home</a>
+                    <a href="./services" class="navbar-item nav-link">Services</a>
+                    <a href="./about" class="navbar-item nav-link">About</a>
+                    <a href="./contact/" class="navbar-item nav-link is-active">Contact</a>
+                </div>
+            </div>
+
+            <div class="menu-mobile">
+                <ul class="navmenu">
+                    <li><a href="./" class="nav-link">Home</a></li>
+                    <li><a href="./services" class="nav-link">Services</a></li>
+                    <li><a href="./about" class="nav-link">About</a></li>
+                    <li><a href="./contact/" class="nav-link is-active">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero is-fullheight">
+        <div class="hero-body columns reverse">
+            <div class="column is-three-fifths-touch" id="contact-right"></div>
+            <div class="column is-three-fifths-desktop">
+                <form action="contact.php" method="POST" id="contactForm" class="form">
+                    <div class="text has-text-centered">
+                        <h2 class="title is-2 is-spaced has-text-white">Contact Us</h2>
+                        <p class="subtitle is-5 has-text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        </p>
+                    </div>
+                    <div id="errorMsg" class="has-text-centered"></div>
+
+                    <div class="field">
+                        <label class="label">Name</label>
+                        <div class="control">
+                            <input class="input required" type="text" placeholder="John Doe" name="name" id="nameField">
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">Email</label>
+                        <div class="control">
+                            <input class="input required" type="email" placeholder="john.doe@mail.com" name="email"
+                                id="emailField">
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <div class="label">Message</div>
+                        <div class="control">
+                            <textarea class="textarea" name="message"
+                                placeholder="Type your message here..."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="control" id="btn-container">
+                        <button class="button is-primary is-inverted is-outlined is-fullwidth" id="submitBtn"
+                            name="submit" type="submit">Submit</button>
+                    </div>
+                </form>
+
+                <div class="columns has-text-centered has-text-white" id="contacts">
+                    <div class="column">
+                        <img src="./assets/map.png" alt="">
+                        <p>MW Networks Installation LLC. Flat 304,
+                            Al Zarouni Building
+                            Naif Road, Deira, Dubai U.A.E.</p>
+                    </div>
+                    <div class="column">
+                        <img src="./assets/fax-icon.png" alt="">
+                        <p>+ 971 4 255 1248</p>
+                    </div>
+                    <div class="column">
+                        <img src="./assets/tel.png" alt="">
+                        <p>+ 971 4 255 1247</p>
+                    </div>
+                    <div class="column">
+                        <img src="./assets/mail.png" alt="">
+                        <p>operations@mwn.ae</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
